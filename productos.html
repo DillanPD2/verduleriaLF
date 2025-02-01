@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verdu - Productos</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar (igual al index) -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Verdu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+              aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado de Página -->
+  <header class="page-header text-center text-light">
+    <div class="container">
+      <h1 class="display-3 animate__animated animate__fadeInDown">Nuestros Productos</h1>
+      <p class="lead animate__animated animate__fadeInUp">Calidad y variedad en cada producto</p>
+    </div>
+  </header>
+
+  <!-- Sección de Productos -->
+  <section class="productos py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Producto: Manzanas -->
+        <div class="col-md-4 mb-4 animate-on-scroll">
+            <div class="card shadow-sm">
+              <img src="img/manzana.jpg" class="card-img-top" alt="Manzanas">
+              <div class="card-body text-center">
+                <h5 class="card-title">Manzanas</h5>
+                <p class="card-text">$700/kg</p>
+              </div>
+            </div>
+          </div>
+        <!-- Producto: Bananas -->
+        <div class="col-md-4 mb-4 animate__animated animate__flipInX animate__delay-1s">
+          <div class="card shadow-sm">
+            <img src="img/banana.jpg" class="card-img-top" alt="Bananas">
+            <div class="card-body text-center">
+              <h5 class="card-title">Bananas</h5>
+              <p class="card-text">$500/kg</p>
+            </div>
+          </div>
+        </div>
+        <!-- Producto: Tomates -->
+        <div class="col-md-4 mb-4 animate__animated animate__flipInX animate__delay-2s">
+          <div class="card shadow-sm">
+            <img src="img/tomate.jpg" class="card-img-top" alt="Tomates">
+            <div class="card-body text-center">
+              <h5 class="card-title">Tomates</h5>
+              <p class="card-text">$400/kg</p>
+            </div>
+          </div>
+        </div>
+        <!-- Producto: Zanahorias -->
+        <div class="col-md-4 mb-4 animate__animated animate__flipInX animate__delay-1s">
+          <div class="card shadow-sm">
+            <img src="img/zanahoria.jpg" class="card-img-top" alt="Zanahorias">
+            <div class="card-body text-center">
+              <h5 class="card-title">Zanahorias</h5>
+              <p class="card-text">$300/kg</p>
+            </div>
+          </div>
+        </div>
+        <!-- Producto: Pepinos -->
+        <div class="col-md-4 mb-4 animate__animated animate__flipInX animate__delay-2s">
+          <div class="card shadow-sm">
+            <img src="img/pepino.jpg" class="card-img-top" alt="Pepinos">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pepinos</h5>
+              <p class="card-text">$350/unidad</p>
+            </div>
+          </div>
+        </div>
+        <!-- Producto: Papas -->
+        <div class="col-md-4 mb-4 animate__animated animate__flipInX animate__delay-3s">
+          <div class="card shadow-sm">
+            <img src="img/papa.jpg" class="card-img-top" alt="Papas">
+            <div class="card-body text-center">
+              <h5 class="card-title">Papas</h5>
+              <p class="card-text">$250/kg</p>
+            </div>
+          </div>
+        </div>
+        <!-- Más productos pueden agregarse -->
+      </div>
+    </div>
+
+     <!-- Zanahoria animada -->
+<div id="zanahoria-guia" class="zanahoria-guia">
+    <div class="zanahoria-cuerpo"></div>
+    <div class="zanahoria-ojos">
+      <div class="ojo izquierdo"></div>
+      <div class="ojo derecho"></div>
+    </div>
+    <div class="zanahoria-boca"></div>
+    <div class="zanahoria-brazos">
+      <div class="brazo izquierdo"></div>
+      <div class="brazo derecho"></div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Verdu. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script personalizado -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
