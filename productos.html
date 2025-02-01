@@ -28,6 +28,11 @@
           <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
           <li class="nav-item"><a class="nav-link" href="ofertas.html">Ofertas</a></li>
           <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="carrito-btn">
+              <i class="bi bi-cart"></i> <span id="carrito-count">0</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -45,16 +50,20 @@
   <section class="productos py-5">
     <div class="container">
       <div class="row">
+        <div class="container my-4">
+          <input type="text" id="buscador" class="form-control" placeholder="Buscar productos...">
+        </div>
         <!-- Producto: Manzanas -->
-        <div class="col-md-4 mb-4 animate-on-scroll">
-            <div class="card shadow-sm">
-              <img src="img/manzana.jpg" class="card-img-top" alt="Manzanas">
-              <div class="card-body text-center">
-                <h5 class="card-title">Manzanas</h5>
-                <p class="card-text">$700/kg</p>
-              </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up"></div>>
+          <div class="card shadow-sm">
+            <img src="img/manzana.jpg" class="card-img-top" alt="Manzanas">
+            <div class="card-body text-center">
+              <h5 class="card-title">Manzanas</h5>
+              <p class="card-text">$700/kg</p>
+              <button class="btn btn-primary" onclick="agregarAlCarrito('Manzanas', 700)">Agregar al carrito</button>
             </div>
           </div>
+        </div>
         <!-- Producto: Bananas -->
         <div class="col-md-4 mb-4 animate__animated animate__flipInX animate__delay-1s">
           <div class="card shadow-sm">
@@ -122,6 +131,26 @@
       <div class="brazo derecho"></div>
     </div>
   </div>
+
+  <!-- Modal del carrito -->
+<div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carritoModalLabel">Tu Carrito</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="lista-carrito" class="list-group mb-3"></ul>
+        <p class="text-end"><strong>Total: $<span id="total-carrito">0</span></strong></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="vaciar-carrito">Vaciar Carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
 
   <!-- Footer -->

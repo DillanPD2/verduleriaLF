@@ -319,3 +319,18 @@ footer {
   25% { transform: rotate(-20deg); }
   75% { transform: rotate(20deg); }
 }
+
+/* Modo oscuro */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .card {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
